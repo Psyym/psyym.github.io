@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title> Quizz handball </title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<header>
+			<p>Handball</p>
+		<nav>
+			<ul>
+				<li class="acceuil"> <a href="psyym.github.io/page belle/main.html"> Accueil </a> </li>
+				<li class="règle"> <a href="psyym.github.io/page belle/regle/main.html"> Règles </a> </li>
+				<li class="poste"> <a href="psyym.github.io/page belle/poste/main.html"> Postes</a> </li>
+				<li class="equipe_de_france"> <a href="psyym.github.io/page belle/edf/main.html"> Equipe de France</a> </li>
+				<li class="quizz"> <a href="psyym.github.io/page belle/quizz/main.html"> Quizz </a> </li>
+			</ul>
+		</nav>
+	</header>
+	<center>
+	<h1>Quizz sur le handball</h1><br><br>
+	
+	<FORM> 
+	<h3>1-Combien y a t'il de joueurs sur le terrain dans une équipe de handball?</h3>
+	<input type="number" name="joueurs" id="question 1" step="1" min="0"
+max="20" value="1"> <br> <br>
+	
+	<h3>2-Combien de fois l'équipe de France a t-elle gagné le championnat du monde?</h3>
+	<input type="number" name="champion" id="question 2" step="1" min="0"
+max="10" value="1"> <br> <br>
+
+	<h3>3-Combien de temps dure un match de handball?</h3> <br>
+	<select size="1" name="temps" id="question 3">
+	<option value="90"> Deux mi-temps de 45 minutes </option>
+	<option value="60"> Deux mi-temps de 30 minutes </option> 
+	<option value="40"> Quatres quart-temps de 10 minutes </option>
+	<option value="45"> Trois tiers-temps de 15 minutes </option>
+	</select> <br> <br>
+
+	<h3>4-Vrai ou Faux: On a le droit au nombre de joueur que l'on veut dans une équipe lors d'un match</h3>
+	  <input type="button" value="Vrai" onclick="Vrai()" />
+	  <input type="button" value="Faux" onclick="Faux()" /> <br><br>
+	  
+	<h3>5-Quel poste a pour rôle d'organiser le jeu et d'indiquer à chacun où se positionner?</h3>
+	<select size="1" name="poste" id="question 5">
+	<option value="Pivot"> Pivot </option>
+	<option value="Gardien"> Gardien </option> 
+	<option value="Demi-centre"> Demi-centre </option>
+	<option value="Arrière"> Arrière </option>
+	<option value="Ailier"> Ailier </option>
+	</select> <br><br>
+ <br>
+
+<input type="button" value="Valider mes réponses" onclick="MaFonction();"/> 
+</FORM> 
+<!--------On affichera le réslutat ici-------------> 
+<h3> <p id='resultat'> Votre score:</p></h3>
+<p id='reponse'> </p>
+<!-------------------------------------------------> 
+<script> 
+	reponse_1=0
+	reponse_2=0
+	reponse_3=0
+	reponse_4=0
+	reponse_5=0
+	function Vrai(){
+	reponse_4=0
+	}
+	function Faux(){
+	reponse_4='f'
+	}
+	function MaFonction() { 
+	note=0
+	var reponse_1= document.getElementById("question 1").value;
+	var reponse_2= document.getElementById("question 2").value;
+	var reponse_3= document.getElementById("question 3").value;
+	var reponse_5= document.getElementById("question 5").value;
+	if (reponse_1=='7') {
+	note=note+1
+	} 
+	if (reponse_2=='6'){
+	note=note+1
+	}
+	if (reponse_3=='60') {
+	note=note+1
+	} 
+	if (reponse_4=='f'){
+	note=note+1;
+	}
+	if (reponse_5=='Demi-centre'){
+	note=note+1;
+	}
+	document.getElementById('resultat').innerHTML= note+'/5';
+	document.getElementById('reponse').innerHTML=' les réponses étaient: 7, 6, Deux mi-temps de 30 minutes, Faux, Demi-centre';
+	}
+</script>
+</center><br><br>
+<footer>
+Mathieu SEILLER <br>
+<a href="psyym.github.io/page belle/main.html"> lien vers la page principale </a> <br>
+Lien des sites utilisés pour le texte et les psyym.github.io/images: <br>
+<a href="https://fr.wikipedia.org/wiki/Handball"> https://fr.wikipedia.org/wiki/Handball</a><br>
+<a href="https://www.owayo.fr/magazine/regles-handball-expliquees-fr.htm"> https://www.owayo.fr/magazine/regles-handball-expliquees-fr.htm</a><br>
+<a href="https://conseils.casalsport.com/les-postes-au-handball">https://conseils.casalsport.com/les-postes-au-handball</a><br>
+<a href="https://www.ffhandball.fr/fr/equipes-de-france/handball/a/equipe-de-france-masculine">https://www.ffhandball.fr/fr/equipes-de-france/handball/a/equipe-de-france-masculine</a> <br>
+</footer>
+	</body>
+</html>

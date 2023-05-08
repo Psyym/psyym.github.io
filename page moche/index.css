@@ -1,0 +1,85 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Caveat', cursive;
+	background-color:#EC7C26;
+	color:#102C54;
+}
+body article{
+	padding-left: 400px;
+}
+body article IMG{
+	padding-right: 80px;
+}
+header {
+	background-color:#2a2ac9;
+}
+header p{
+	font-size:80;
+	font-weight: bold;
+	color: #9B111E;
+	margin-left:20px;
+	margin-bottom:0px;
+	font-family: 'Caveat', cursive;
+}
+footer{
+	background-color:#FF7FF7;
+	color: #9B111E;
+	padding: 30px 
+}
+body table {
+	box-shadow:10px 10px 10px 6px #888888;
+	background-color: #57A639
+}
+body article table{
+	box-shadow:0px 0px 0px;
+}
+nav ul{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+nav li{
+	list-style-type: none;
+	float:left;
+}
+
+nav{
+	width: 100%;
+	background-color: #2a2ac9;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px;
+	color: #4aff06;
+}
+nav li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+body div{
+	text-align: justify;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+.acceuil:hover{
+	border-bottom: 5px solid #a44d26;
+	background-color:RGBa(228,77,38,0.30);
+}
+.poste:hover{
+	border-bottom: 5px solid #00bb70;
+	background-color:RGBa(000,112,192,0.30);
+}
+.règle:hover{
+	border-bottom: 5px solid #f1dc4f;
+	background-color:RGBa(241,211,79,0.30);
+}
+.equipe_de_france:hover{
+	border-bottom: 5px solid #BBB;
+	background-color:RGBa(220,220,220,0.30);
+}
+.quizz:hover{
+	border-bottom: 5px solid #c92ac9;
+	background-color:RGBa(201,42,201,0.30);
+}
